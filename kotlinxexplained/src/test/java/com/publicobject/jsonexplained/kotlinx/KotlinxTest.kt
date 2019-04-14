@@ -15,14 +15,19 @@
  */
 package com.publicobject.jsonexplained.kotlinx
 
+import kotlinx.serialization.ImplicitReflectionSerializer
+import kotlinx.serialization.SerializationException
 import kotlinx.serialization.UnstableDefault
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
 import okio.buffer
 import okio.source
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.Assert.fail
 import org.junit.Test
+import java.util.concurrent.CompletableFuture
 
+@ImplicitReflectionSerializer
 @UseExperimental(UnstableDefault::class)
 class KotlinxTest {
   private val json = Json(JsonConfiguration(strictMode = false))
@@ -47,6 +52,14 @@ class KotlinxTest {
         "June Carter Cash: Appalachian Pride by June Carter Cash",
         "Iggy Azalea: Kream by Iggy Azalea (Ft. Tyga)"
     )
+  }
+
+  @Test fun unexpectedType() {
+    try {
+      json.toJson(CompletableFuture<String>())
+      fail()
+    } catch (_: SerializationException) {
+    }
   }
 
   private fun readResource(path: String): String {

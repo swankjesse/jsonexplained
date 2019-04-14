@@ -16,11 +16,14 @@
 package com.publicobject.jsonexplained.moshi
 
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
 import okio.Source
 import okio.buffer
 import okio.source
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.Assert.fail
 import org.junit.Test
+import java.util.concurrent.CompletableFuture
 
 class MoshiTest {
   val moshi = Moshi.Builder()
@@ -49,6 +52,15 @@ class MoshiTest {
         "June Carter Cash: Appalachian Pride by June Carter Cash",
         "Iggy Azalea: Kream by Iggy Azalea (Ft. Tyga)"
     )
+  }
+
+  @Test fun unexpectedType() {
+    try {
+      moshi.adapter<CompletableFuture<String>>(
+          Types.newParameterizedType(CompletableFuture::class.java, String::class.java))
+      fail()
+    } catch (_: IllegalArgumentException) {
+    }
   }
 
   private fun readResource(path: String): Source = javaClass.getResourceAsStream(path).source()

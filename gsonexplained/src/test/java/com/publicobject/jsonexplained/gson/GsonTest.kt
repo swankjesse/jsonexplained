@@ -16,11 +16,13 @@
 package com.publicobject.jsonexplained.gson
 
 import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
 import okhttp3.HttpUrl
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import java.io.InputStreamReader
 import java.io.Reader
+import java.util.concurrent.CompletableFuture
 
 class GsonTest {
   val gson = GsonBuilder()
@@ -48,6 +50,12 @@ class GsonTest {
         "June Carter Cash: Appalachian Pride by June Carter Cash",
         "Iggy Azalea: Kream by Iggy Azalea (Ft. Tyga)"
     )
+  }
+
+  @Test fun unexpectedType() {
+    val typeToken = object : TypeToken<CompletableFuture<String>>() {}
+    val json = gson.toJson(CompletableFuture<String>(), typeToken.type)
+    assertThat(json).isEqualTo("{}")
   }
 
   private fun readResource(path: String): Reader =

@@ -24,13 +24,17 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer
 import okhttp3.HttpUrl
 
 object HttpUrlSerializer : StdSerializer<HttpUrl>(HttpUrl::class.java) {
-  override fun serialize(value: HttpUrl, generator: JsonGenerator, provider: SerializerProvider) {
+  override fun serialize(
+    value: HttpUrl, generator: JsonGenerator, provider: SerializerProvider
+  ) {
     generator.writeString(value.toString())
   }
 }
 
 object HttpUrlDeserializer : StdDeserializer<HttpUrl>(HttpUrl::class.java) {
-  override fun deserialize(parser: JsonParser, context: DeserializationContext?): HttpUrl {
+  override fun deserialize(
+    parser: JsonParser, context: DeserializationContext?
+  ): HttpUrl {
     val text = parser.getValueAsString()
     return HttpUrl.get(text)
   }

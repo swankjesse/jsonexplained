@@ -23,6 +23,7 @@ import okhttp3.HttpUrl
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import java.io.InputStream
+import java.util.concurrent.CompletableFuture
 
 class JacksonTest {
   var mapper = jacksonObjectMapper().apply {
@@ -52,6 +53,11 @@ class JacksonTest {
         "June Carter Cash: Appalachian Pride by June Carter Cash",
         "Iggy Azalea: Kream by Iggy Azalea (Ft. Tyga)"
     )
+  }
+
+  @Test fun unexpectedType() {
+    val json = mapper.writeValueAsString(CompletableFuture<String>())
+    assertThat(json).contains("\"cancelled\":false")
   }
 
   private fun readResource(path: String): InputStream = javaClass.getResourceAsStream(path)
