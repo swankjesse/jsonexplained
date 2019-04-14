@@ -16,13 +16,16 @@
 package com.publicobject.jsonexplained.gson
 
 import com.google.gson.GsonBuilder
+import okhttp3.HttpUrl
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import java.io.InputStreamReader
 import java.io.Reader
 
 class GsonTest {
-  val gson = GsonBuilder().create()
+  val gson = GsonBuilder()
+      .registerTypeAdapter(HttpUrl::class.java, HttpUrlTypeAdapter)
+      .create()
 
   @Test fun decodeJson() {
     val searchResponseBody = readResource("/songs.json").use { reader ->

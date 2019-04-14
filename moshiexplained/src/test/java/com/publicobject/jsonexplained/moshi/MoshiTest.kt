@@ -23,7 +23,9 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 
 class MoshiTest {
-  val moshi = Moshi.Builder().build()
+  val moshi = Moshi.Builder()
+      .add(SongAdapters)
+      .build()
   val adapter = moshi.adapter(SearchResponseBody::class.java)
 
   @Test fun decodeJson() {

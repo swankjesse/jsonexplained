@@ -18,6 +18,7 @@ dependencies {
   compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
   compile "org.jetbrains.kotlin:kotlin-reflect"
   compile 'com.google.code.gson:gson:2.8.5'
+  compile "com.squareup.okhttp3:okhttp:3.14.1"
 
   testImplementation "org.assertj:assertj-core:1.7.0"
   testImplementation "junit:junit:4.12"

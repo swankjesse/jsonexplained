@@ -16,8 +16,10 @@
 package com.publicobject.jsonexplained.jackson
 
 import com.fasterxml.jackson.databind.DeserializationFeature
+import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
+import okhttp3.HttpUrl
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import java.io.InputStream
@@ -25,6 +27,10 @@ import java.io.InputStream
 class JacksonTest {
   var mapper = jacksonObjectMapper().apply {
     disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+    registerModule(SimpleModule().apply {
+      addSerializer(HttpUrl::class.java, HttpUrlSerializer)
+      addDeserializer(HttpUrl::class.java, HttpUrlDeserializer)
+    })
   }
 
   @Test fun decodeJson() {

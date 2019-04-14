@@ -19,6 +19,7 @@ dependencies {
   compile "org.jetbrains.kotlin:kotlin-reflect"
   compile "com.fasterxml.jackson.core:jackson-databind:2.9.8"
   compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.8"
+  compile "com.squareup.okhttp3:okhttp:3.14.1"
 
   testImplementation "org.assertj:assertj-core:1.7.0"
   testImplementation "junit:junit:4.12"

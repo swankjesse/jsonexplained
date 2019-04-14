@@ -15,6 +15,8 @@
  */
 package com.publicobject.jsonexplained.gson
 
+import okhttp3.HttpUrl
+
 data class SearchResponseBody(
   val response: SearchResponse
 )
@@ -33,13 +35,13 @@ data class SongResult(
   val path: String,
   val full_title: String,
   val annotation_count: Int,
-  val url: String,
-  val header_image_url: String,
+  val url: HttpUrl,
+  val header_image_url: HttpUrl,
   val lyrics_state: String,
-  val song_art_image_thumbnail_url: String,
+  val song_art_image_thumbnail_url: HttpUrl,
   val id: Long,
   val title: String,
-  val header_image_thumbnail_url: String,
+  val header_image_thumbnail_url: HttpUrl,
   val lyrics_owner_id: Long,
   val primary_artist: Artist,
   val title_with_featured: String,
@@ -50,11 +52,11 @@ data class SongResult(
 data class Artist(
   val id: Long,
   val api_path: String,
-  val image_url: String,
+  val image_url: HttpUrl,
   val is_meme_verified: Boolean,
   val is_verified: Boolean,
-  val header_image_url: String,
-  val url: String,
+  val header_image_url: HttpUrl,
+  val url: HttpUrl,
   val iq: Long? = null,
   val name: String
 )
