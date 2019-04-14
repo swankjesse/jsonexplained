@@ -17,6 +17,7 @@ package com.publicobject.jsonexplained.kotlinx
 
 import kotlinx.serialization.UnstableDefault
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonConfiguration
 import okio.buffer
 import okio.source
 import org.assertj.core.api.Assertions.assertThat
@@ -24,9 +25,11 @@ import org.junit.Test
 
 @UseExperimental(UnstableDefault::class)
 class KotlinxTest {
+  private val json = Json(JsonConfiguration(strictMode = false))
+
   @Test fun decodeJson() {
-    val searchResponseBody =
-        Json.nonstrict.parse(SearchResponseBody.serializer(), readResource("/songs.json"))
+    val searchResponseBody = json.parse(
+        SearchResponseBody.serializer(), readResource("/songs.json"))
 
     val summaries = searchResponseBody.response.hits.map {
       "${it.result.primary_artist.name}: ${it.result.full_title}"
