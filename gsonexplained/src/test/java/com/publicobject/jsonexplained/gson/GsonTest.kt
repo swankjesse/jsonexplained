@@ -13,22 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.publicobject.jsonexplained.moshi
+package com.publicobject.jsonexplained.gson
 
-import com.squareup.moshi.Moshi
-import okio.Source
-import okio.buffer
-import okio.source
+import com.google.gson.GsonBuilder
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
+import java.io.InputStreamReader
+import java.io.Reader
 
-class MoshiTest {
-  val moshi = Moshi.Builder().build()
-  val adapter = moshi.adapter(SearchResponseBody::class.java)
+class GsonTest {
+  val gson = GsonBuilder().create()
 
   @Test fun decodeJson() {
-    val searchResponseBody = readResource("/songs.json").buffer().use { source ->
-      adapter.fromJson(source)!!
+    val searchResponseBody = readResource("/songs.json").use { reader ->
+      gson.fromJson(reader, SearchResponseBody::class.java)
     }
 
     val summaries = searchResponseBody.response.hits.map {
@@ -49,5 +47,6 @@ class MoshiTest {
     )
   }
 
-  private fun readResource(path: String): Source = javaClass.getResourceAsStream(path).source()
+  private fun readResource(path: String): Reader =
+      InputStreamReader(javaClass.getResourceAsStream(path))
 }
