@@ -1,5 +1,17 @@
+buildscript {
+  ext.kotlin_version = '1.3.30'
+  repositories {
+    jcenter() 
+  }
+
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
+  }
+}
+
 apply plugin: 'kotlin'
-apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlinx-serialization'
 
 compileKotlin {
   kotlinOptions {
@@ -12,19 +24,18 @@ compileTestKotlin {
   kotlinOptions {
     jvmTarget = "1.8"
     allWarningsAsErrors = true
+    freeCompilerArgs += "-Xuse-experimental=kotlin.Experimental"
   }
 }
 
 dependencies {
-  kapt "com.squareup.moshi:moshi-kotlin-codegen:1.8.0"
-
   compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
   compile "org.jetbrains.kotlin:kotlin-reflect"
   compile "com.squareup.okio:okio:2.2.0"
-  compile "com.squareup.moshi:moshi:1.8.0"
-  compile "com.squareup.moshi:moshi-kotlin:1.8.0"
+  compile "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.11.0"
 
   testImplementation "org.assertj:assertj-core:1.7.0"
   testImplementation "junit:junit:4.12"
+  testImplementation "com.squareup.okio:okio:2.2.0"
   testImplementation project(":testdata")
 }

@@ -1,3 +1,4 @@
 include ':jacksonexplained'
+include ':kotlinxexplained'
 include ':moshiexplained'
 include ':testdata'
