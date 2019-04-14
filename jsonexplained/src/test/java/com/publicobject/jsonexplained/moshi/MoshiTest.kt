@@ -13,9 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.publicobject.jsonexplained
+package com.publicobject.jsonexplained.moshi
 
-import com.publicobject.jsonexplained.moshi.SearchResponseBody
 import com.squareup.moshi.Moshi
 import okio.Source
 import okio.buffer
@@ -24,9 +23,9 @@ import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 
 class MoshiTest {
-  @Test fun decodeJson() {
-    val moshi = Moshi.Builder().build()
+  val moshi = Moshi.Builder().build()
 
+  @Test fun decodeJson() {
     val adapter = moshi.adapter(SearchResponseBody::class.java)
     println(adapter)
 
