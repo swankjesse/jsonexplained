@@ -1,1 +1,3 @@
-include ':jsonexplained'
+include ':jacksonexplained'
+include ':moshiexplained'
+include ':testdata'

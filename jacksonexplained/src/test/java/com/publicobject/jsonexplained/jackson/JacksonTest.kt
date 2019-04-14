@@ -18,7 +18,6 @@ package com.publicobject.jsonexplained.jackson
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
-import com.publicobject.jsonexplained.moshi.SearchResponseBody
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 import java.io.InputStream
