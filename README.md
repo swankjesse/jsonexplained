@@ -1,14 +1,10 @@
-# Maintainability
+# JSON Explained
 
-Code examples from my 2018 tech talk on maintainability
+Code examples from my 2019 tech talk on JSON.
 
 ### Links
 
- * [Branch By Abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)
- * [Trunk Based Development](https://trunkbaseddevelopment.com/)
- * [u2020](https://github.com/JakeWharton/u2020) - an open source app with a debug drawer to toggle experiments
- * [Release Trains](https://wiki.documentfoundation.org/ReleasePlan)
- * [England, Great Britain, and the UK](https://brilliantmaps.com/eng-gb-uk/)
- * [Domic](https://github.com/lyft/domic)
- * [Shipley’s Law](http://blog.wilshipley.com/2005/06/student-talk-from-wwdc-2005.html)
- * [SuperToasts](https://github.com/JohnPersano/SuperToasts)
+ * [Jackson](https://github.com/FasterXML/jackson/)
+ * [Gson](https://github.com/google/gson/)
+ * [Moshi](https://github.com/square/moshi/)
+ * [Kotlin Serialization](https://github.com/Kotlin/kotlinx.serialization/)
