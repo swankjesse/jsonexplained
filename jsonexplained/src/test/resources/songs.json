@@ -1,0 +1,366 @@
+{
+  "meta" : {
+    "status" : 200
+  },
+  "response" : {
+    "hits" : [
+      {
+        "index" : "song",
+        "type" : "song",
+        "result" : {
+          "full_title" : "Cash App by Dreezy (Ft. Offset)",
+          "path" : "/Dreezy-cash-app-lyrics",
+          "header_image_url" : "https://images.genius.com/211001ffe88687b891cd06546a7b4461.1000x1000x1.jpg",
+          "url" : "https://genius.com/Dreezy-cash-app-lyrics",
+          "annotation_count" : 0,
+          "song_art_image_thumbnail_url" : "https://images.genius.com/211001ffe88687b891cd06546a7b4461.300x300x1.jpg",
+          "lyrics_state" : "complete",
+          "title" : "Cash App",
+          "header_image_thumbnail_url" : "https://images.genius.com/211001ffe88687b891cd06546a7b4461.300x300x1.jpg",
+          "id" : 4242213,
+          "stats" : {
+            "unreviewed_annotations" : 0,
+            "hot" : false
+          },
+          "primary_artist" : {
+            "id" : 41226,
+            "api_path" : "/artists/41226",
+            "image_url" : "https://images.genius.com/04cdd6da2279a7f2246d924f2ad982b2.876x876x1.jpg",
+            "is_verified" : true,
+            "is_meme_verified" : false,
+            "header_image_url" : "https://images.genius.com/d2cdf8a32bf987920355971f32dbc737.600x415x1.jpg",
+            "url" : "https://genius.com/artists/Dreezy",
+            "iq" : 689,
+            "name" : "Dreezy"
+          },
+          "lyrics_owner_id" : 54639,
+          "title_with_featured" : "Cash App (Ft. Offset)",
+          "api_path" : "/songs/4242213",
+          "pyongs_count" : null
+        },
+        "highlights" : []
+      },
+      {
+        "result" : {
+          "full_title" : "Cash App by Rick Stevenson",
+          "path" : "/Rick-stevenson-cash-app-lyrics",
+          "url" : "https://genius.com/Rick-stevenson-cash-app-lyrics",
+          "header_image_url" : "https://images.genius.com/b5eadfb131cb82b2b146cc6a706664d6.1000x1000x1.jpg",
+          "annotation_count" : 6,
+          "song_art_image_thumbnail_url" : "https://images.genius.com/b5eadfb131cb82b2b146cc6a706664d6.300x300x1.jpg",
+          "lyrics_state" : "complete",
+          "title" : "Cash App",
+          "header_image_thumbnail_url" : "https://images.genius.com/b5eadfb131cb82b2b146cc6a706664d6.300x300x1.jpg",
+          "id" : 3772789,
+          "stats" : {
+            "unreviewed_annotations" : 6,
+            "hot" : false
+          },
+          "primary_artist" : {
+            "api_path" : "/artists/985732",
+            "id" : 985732,
+            "is_verified" : false,
+            "is_meme_verified" : false,
+            "image_url" : "https://images.genius.com/b5eadfb131cb82b2b146cc6a706664d6.1000x1000x1.jpg",
+            "header_image_url" : "https://images.genius.com/653480b11f9c32b88852ecbf6a9ab461.750x1000x1.jpg",
+            "url" : "https://genius.com/artists/Rick-stevenson",
+            "name" : "Rick Stevenson",
+            "iq" : 144
+          },
+          "lyrics_owner_id" : 3556494,
+          "title_with_featured" : "Cash App",
+          "api_path" : "/songs/3772789",
+          "pyongs_count" : 2
+        },
+        "highlights" : [],
+        "type" : "song",
+        "index" : "song"
+      },
+      {
+        "type" : "song",
+        "result" : {
+          "title_with_featured" : "Appeal (Ft. Young Scooter)",
+          "api_path" : "/songs/157873",
+          "pyongs_count" : 1,
+          "primary_artist" : {
+            "id" : 2197,
+            "api_path" : "/artists/2197",
+            "image_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+            "is_verified" : true,
+            "is_meme_verified" : false,
+            "header_image_url" : "https://images.genius.com/78c8b1c360f02140b018fc9e79fde7c7.1000x281x1.jpg",
+            "url" : "https://genius.com/artists/Future",
+            "iq" : 3741,
+            "name" : "Future"
+          },
+          "lyrics_owner_id" : 228617,
+          "id" : 157873,
+          "header_image_thumbnail_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+          "title" : "Appeal",
+          "lyrics_state" : "complete",
+          "song_art_image_thumbnail_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+          "stats" : {
+            "hot" : false,
+            "unreviewed_annotations" : 1
+          },
+          "annotation_count" : 3,
+          "url" : "https://genius.com/Future-appeal-lyrics",
+          "header_image_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+          "path" : "/Future-appeal-lyrics",
+          "full_title" : "Appeal by Future (Ft. Young Scooter)"
+        },
+        "highlights" : [],
+        "index" : "song"
+      },
+      {
+        "index" : "song",
+        "type" : "song",
+        "result" : {
+          "id" : 2408502,
+          "title" : "Appetite",
+          "header_image_thumbnail_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+          "lyrics_state" : "complete",
+          "song_art_image_thumbnail_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+          "stats" : {
+            "hot" : false,
+            "unreviewed_annotations" : 0
+          },
+          "annotation_count" : 1,
+          "header_image_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+          "url" : "https://genius.com/Future-appetite-lyrics",
+          "path" : "/Future-appetite-lyrics",
+          "full_title" : "Appetite by Future",
+          "title_with_featured" : "Appetite",
+          "api_path" : "/songs/2408502",
+          "pyongs_count" : null,
+          "lyrics_owner_id" : 272373,
+          "primary_artist" : {
+            "name" : "Future",
+            "iq" : 3741,
+            "header_image_url" : "https://images.genius.com/78c8b1c360f02140b018fc9e79fde7c7.1000x281x1.jpg",
+            "url" : "https://genius.com/artists/Future",
+            "is_verified" : true,
+            "is_meme_verified" : false,
+            "image_url" : "https://images.genius.com/d3c864e3e8edaccf25a66ba49790f4d0.300x300x1.jpg",
+            "api_path" : "/artists/2197",
+            "id" : 2197
+          }
+        },
+        "highlights" : []
+      },
+      {
+        "type" : "song",
+        "highlights" : [],
+        "result" : {
+          "pyongs_count" : 1,
+          "title_with_featured" : "Cash App",
+          "api_path" : "/songs/3652180",
+          "lyrics_owner_id" : 6248649,
+          "primary_artist" : {
+            "header_image_url" : "https://assets.genius.com/images/default_avatar_300.png?1555096680",
+            "url" : "https://genius.com/artists/Marty-mula",
+            "name" : "Marty Mula",
+            "id" : 1302514,
+            "api_path" : "/artists/1302514",
+            "image_url" : "https://assets.genius.com/images/default_avatar_300.png?1555096680",
+            "is_meme_verified" : false,
+            "is_verified" : false
+          },
+          "stats" : {
+            "hot" : false,
+            "unreviewed_annotations" : 0
+          },
+          "lyrics_state" : "complete",
+          "song_art_image_thumbnail_url" : "https://assets.genius.com/images/default_cover_image.png?1555096680",
+          "id" : 3652180,
+          "header_image_thumbnail_url" : "https://assets.genius.com/images/default_cover_image.png?1555096680",
+          "title" : "Cash App",
+          "path" : "/Marty-mula-cash-app-lyrics",
+          "full_title" : "Cash App by Marty Mula",
+          "annotation_count" : 0,
+          "header_image_url" : "https://assets.genius.com/images/default_cover_image.png?1555096680",
+          "url" : "https://genius.com/Marty-mula-cash-app-lyrics"
+        },
+        "index" : "song"
+      },
+      {
+        "index" : "song",
+        "type" : "song",
+        "result" : {
+          "stats" : {
+            "hot" : false,
+            "unreviewed_annotations" : 0
+          },
+          "title" : "Cash App",
+          "header_image_thumbnail_url" : "https://images.genius.com/53ab3f48418078f9dd2aa1c16b639575.300x300x1.jpg",
+          "id" : 4446814,
+          "song_art_image_thumbnail_url" : "https://images.genius.com/53ab3f48418078f9dd2aa1c16b639575.300x300x1.jpg",
+          "lyrics_state" : "complete",
+          "url" : "https://genius.com/A1-cash-app-lyrics",
+          "header_image_url" : "https://images.genius.com/53ab3f48418078f9dd2aa1c16b639575.1000x1000x1.jpg",
+          "annotation_count" : 0,
+          "full_title" : "Cash App by A1 (Ft. YBN Almighty Jay)",
+          "path" : "/A1-cash-app-lyrics",
+          "pyongs_count" : null,
+          "title_with_featured" : "Cash App (Ft. YBN Almighty Jay)",
+          "api_path" : "/songs/4446814",
+          "lyrics_owner_id" : 54639,
+          "primary_artist" : {
+            "image_url" : "https://images.genius.com/951c94e4eaf0b9dba8daf54cb4c0d320.500x500x1.jpg",
+            "is_meme_verified" : false,
+            "is_verified" : false,
+            "id" : 233680,
+            "api_path" : "/artists/233680",
+            "name" : "A1",
+            "url" : "https://genius.com/artists/A1",
+            "header_image_url" : "https://images.genius.com/de9517bfd1f924fd7461a3f24bbc78fe.400x400x1.jpg"
+          }
+        },
+        "highlights" : []
+      },
+      {
+        "index" : "song",
+        "type" : "song",
+        "result" : {
+          "header_image_thumbnail_url" : "https://images.genius.com/568dd831e07600d28abafbbeee9d1b39.300x300x1.png",
+          "title" : "Cash App",
+          "id" : 3976898,
+          "song_art_image_thumbnail_url" : "https://images.genius.com/568dd831e07600d28abafbbeee9d1b39.300x300x1.png",
+          "lyrics_state" : "complete",
+          "stats" : {
+            "hot" : false,
+            "unreviewed_annotations" : 0
+          },
+          "url" : "https://genius.com/Dewey-da-don-cash-app-lyrics",
+          "header_image_url" : "https://images.genius.com/568dd831e07600d28abafbbeee9d1b39.1000x1000x1.png",
+          "annotation_count" : 0,
+          "full_title" : "Cash App by Dewey Da Don (Ft. Novacain)",
+          "path" : "/Dewey-da-don-cash-app-lyrics",
+          "title_with_featured" : "Cash App (Ft. Novacain)",
+          "api_path" : "/songs/3976898",
+          "pyongs_count" : null,
+          "primary_artist" : {
+            "name" : "Dewey Da Don",
+            "header_image_url" : "https://images.genius.com/9a7c1df875ad6c6a30dd5028f95bea2c.1000x1000x1.png",
+            "url" : "https://genius.com/artists/Dewey-da-don",
+            "is_verified" : false,
+            "is_meme_verified" : false,
+            "image_url" : "https://images.genius.com/5b4ac4bf1052b7c4137455d5ed8785c5.962x962x1.png",
+            "api_path" : "/artists/1585766",
+            "id" : 1585766
+          },
+          "lyrics_owner_id" : 6994452
+        },
+        "highlights" : []
+      },
+      {
+        "result" : {
+          "lyrics_state" : "incomplete",
+          "song_art_image_thumbnail_url" : "https://images.genius.com/2da4eb2f43941b71bdd0730a6f2d20c5.300x300x1.jpg",
+          "id" : 3985540,
+          "title" : "10 Cash App",
+          "header_image_thumbnail_url" : "https://images.genius.com/2da4eb2f43941b71bdd0730a6f2d20c5.300x300x1.jpg",
+          "stats" : {
+            "unreviewed_annotations" : 0,
+            "hot" : false
+          },
+          "path" : "/Og-3three-10-cash-app-lyrics",
+          "full_title" : "10 Cash App by OG 3Three",
+          "annotation_count" : 0,
+          "header_image_url" : "https://images.genius.com/2da4eb2f43941b71bdd0730a6f2d20c5.1000x1000x1.jpg",
+          "url" : "https://genius.com/Og-3three-10-cash-app-lyrics",
+          "title_with_featured" : "10 Cash App",
+          "api_path" : "/songs/3985540",
+          "pyongs_count" : null,
+          "lyrics_owner_id" : 4871514,
+          "primary_artist" : {
+            "api_path" : "/artists/1068038",
+            "id" : 1068038,
+            "is_verified" : false,
+            "is_meme_verified" : false,
+            "image_url" : "https://images.genius.com/966376371d99ef12c17d9d14fedc6310.972x972x1.jpg",
+            "url" : "https://genius.com/artists/Og-3three",
+            "header_image_url" : "https://images.genius.com/24e9e9c04b4d532eedf552c5217d1cb1.1000x999x1.jpg",
+            "name" : "OG 3Three"
+          }
+        },
+        "highlights" : [],
+        "type" : "song",
+        "index" : "song"
+      },
+      {
+        "index" : "song",
+        "highlights" : [],
+        "result" : {
+          "path" : "/June-carter-cash-appalachian-pride-lyrics",
+          "full_title" : "Appalachian Pride by June Carter Cash",
+          "annotation_count" : 1,
+          "url" : "https://genius.com/June-carter-cash-appalachian-pride-lyrics",
+          "header_image_url" : "https://images.genius.com/74d918fdaac62c103d5d25616939bdc5.288x288x1.jpg",
+          "lyrics_state" : "complete",
+          "song_art_image_thumbnail_url" : "https://images.genius.com/74d918fdaac62c103d5d25616939bdc5.288x288x1.jpg",
+          "id" : 1241166,
+          "title" : "Appalachian Pride",
+          "header_image_thumbnail_url" : "https://images.genius.com/74d918fdaac62c103d5d25616939bdc5.288x288x1.jpg",
+          "stats" : {
+            "hot" : false,
+            "unreviewed_annotations" : 0
+          },
+          "lyrics_owner_id" : 1549345,
+          "primary_artist" : {
+            "id" : 153456,
+            "api_path" : "/artists/153456",
+            "image_url" : "https://images.genius.com/83340628c7a139e55cc10e2056fddcbe.402x402x1.jpg",
+            "is_meme_verified" : false,
+            "is_verified" : false,
+            "url" : "https://genius.com/artists/June-carter-cash",
+            "header_image_url" : "https://images.genius.com/83340628c7a139e55cc10e2056fddcbe.402x402x1.jpg",
+            "name" : "June Carter Cash"
+          },
+          "title_with_featured" : "Appalachian Pride",
+          "api_path" : "/songs/1241166",
+          "pyongs_count" : null
+        },
+        "type" : "song"
+      },
+      {
+        "result" : {
+          "title_with_featured" : "Kream (Ft. Tyga)",
+          "api_path" : "/songs/3798091",
+          "pyongs_count" : 82,
+          "lyrics_owner_id" : 3489629,
+          "primary_artist" : {
+            "api_path" : "/artists/14598",
+            "id" : 14598,
+            "is_verified" : true,
+            "is_meme_verified" : true,
+            "image_url" : "https://images.genius.com/9f2544e160b6fd65bf9b2d16c63aa7d9.400x400x1.jpg",
+            "url" : "https://genius.com/artists/Iggy-azalea",
+            "header_image_url" : "https://images.genius.com/be4455918f879dea92c5e85b28c9d09e.1000x333x1.jpg",
+            "name" : "Iggy Azalea",
+            "iq" : 100
+          },
+          "song_art_image_thumbnail_url" : "https://images.genius.com/42886f7937d0c5e4971e3456ab959d3a.300x300x1.jpg",
+          "lyrics_state" : "complete",
+          "title" : "Kream",
+          "header_image_thumbnail_url" : "https://images.genius.com/d88b58e284c1b4784986a680a1058cf2.300x71x1.jpg",
+          "id" : 3798091,
+          "stats" : {
+            "pageviews" : 257893,
+            "concurrents" : 2,
+            "unreviewed_annotations" : 2,
+            "hot" : false
+          },
+          "full_title" : "Kream by Iggy Azalea (Ft. Tyga)",
+          "path" : "/Iggy-azalea-kream-lyrics",
+          "header_image_url" : "https://images.genius.com/d88b58e284c1b4784986a680a1058cf2.1000x236x1.jpg",
+          "url" : "https://genius.com/Iggy-azalea-kream-lyrics",
+          "annotation_count" : 14
+        },
+        "highlights" : [],
+        "type" : "song",
+        "index" : "song"
+      }
+    ]
+  }
+}
