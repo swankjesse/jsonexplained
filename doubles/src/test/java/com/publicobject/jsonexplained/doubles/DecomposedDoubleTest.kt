@@ -26,7 +26,8 @@ class DecomposedDoubleTest {
     assertThat(DecomposedDouble.create(5.5))
         .isEqualTo(DecomposedDouble(11, 2))
     assertThat(DecomposedDouble.create(0.1))
-        .isEqualTo(DecomposedDouble(3602879701896397, 36028797018963968))
+        .isEqualTo(DecomposedDouble(3602879701896397,
+            36028797018963968))
     assertThat(DecomposedDouble(3, 8).toBigDecimal().toString()).isEqualTo("0.375")
   }
 }
