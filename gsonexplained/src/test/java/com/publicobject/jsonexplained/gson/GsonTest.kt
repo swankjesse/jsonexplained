@@ -58,6 +58,11 @@ class GsonTest {
     assertThat(json).isEqualTo("{}")
   }
 
+  @Test fun ampersand() {
+    // Gson.
+    println(gson.toJson("Barnes & Noble")) // "Barnes \u0026 Noble"
+  }
+
   private fun readResource(path: String): Reader =
       InputStreamReader(javaClass.getResourceAsStream(path))
 }

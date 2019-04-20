@@ -63,5 +63,11 @@ class MoshiTest {
     }
   }
 
+  @Test fun ampersand() {
+    // Moshi.
+    val stringAdapter = moshi.adapter(String::class.java)
+    println(stringAdapter.toJson("Barnes & Noble")) // "Barnes & Noble"
+  }
+
   private fun readResource(path: String): Source = javaClass.getResourceAsStream(path).source()
 }

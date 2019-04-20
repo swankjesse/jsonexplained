@@ -60,5 +60,10 @@ class JacksonTest {
     assertThat(json).contains("\"cancelled\":false")
   }
 
+  @Test fun ampersand() {
+    // Jackson
+    println(mapper.writeValueAsString("Barnes & Noble")) // "Barnes & Noble"
+  }
+
   private fun readResource(path: String): InputStream = javaClass.getResourceAsStream(path)
 }

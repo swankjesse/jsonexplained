@@ -20,6 +20,8 @@ import kotlinx.serialization.SerializationException
 import kotlinx.serialization.UnstableDefault
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
+import kotlinx.serialization.json.JsonLiteral
+import kotlinx.serialization.json.JsonLiteralSerializer
 import okio.buffer
 import okio.source
 import org.assertj.core.api.Assertions.assertThat
@@ -60,6 +62,13 @@ class KotlinxTest {
       fail()
     } catch (_: SerializationException) {
     }
+  }
+
+  @Test fun ampersand() {
+    // Kotlin Serialization.
+    val serializer = JsonLiteralSerializer
+    val literal = JsonLiteral("Barnes & Noble")
+    println(json.stringify(serializer, literal)) // "Barnes & Noble"
   }
 
   private fun readResource(path: String): String {
