@@ -2,7 +2,10 @@
 
 Code examples from my 2019 tech talk on JSON.
 
-### Links
+ * [Slides](https://speakerdeck.com/swankjesse/json-explained-chicago-roboto-2019)
+ * Video forthcoming
+
+### Libraries
 
  * [Jackson](https://github.com/FasterXML/jackson/)
  * [Gson](https://github.com/google/gson/)
