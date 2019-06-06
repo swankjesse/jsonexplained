@@ -3,7 +3,7 @@
 Code examples from my 2019 tech talk on JSON.
 
  * [Slides](https://speakerdeck.com/swankjesse/json-explained-chicago-roboto-2019)
- * Video forthcoming
+ * [Video](https://vimeo.com/334067631#t=11m0s) (starts at 11m)
 
 ### Libraries
 
